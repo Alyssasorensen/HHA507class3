@@ -1,4 +1,5 @@
 import pandas as pd
+import plotly as pl
 
 ## loading the clean .csv file - patients_cleaned.csv
 
@@ -28,3 +29,14 @@ glucose.to_csv(csv file here)
 glucose['lab_result_num_val'].describe()
 
 
+plt.hist(glucose['lab_result_num_val'], bins=30, density=True, alpha=0.7, color='blue', label='Normal Distribution')
+plt.title('Glucose Distribution')
+plt.xlabel('Value')
+plt.ylabel('Probability Density')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+kurt = kurtosis(glucose['lab_result_num_val'], fisher=False)
+
+skewness = skew(glucose['lab_result_num_val'])
