@@ -2,6 +2,7 @@
 import pandas as pd 
 
 ### Load in data 
+df_patients = pd.read_csv('https://raw.githubusercontent.com/Alyssasorensen/HHA507class3/main/patient.csv')
 df_patients['patient_id'].nunique()
 
 ### Look for missingness
@@ -11,7 +12,7 @@ df_patients.isnull().sum()
 
 percentmissing = pd.DataFrame(df_patients.isnull().sum()).reset_index()
 percentmissing.rename(columns = {'index': 'variable', 0:'count_missing'}, inplace = true)
-percentmissing['missing_percent'] = percentmissing['count_missing']/df_patients.shape[0])*100 
+percentmissing['missing_percent'] = percentmissing['count_missing']/(df_patients.shape[0]) * 100 
 
 ### Look for outliers 
 
