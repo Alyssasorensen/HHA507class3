@@ -212,5 +212,3 @@ print(outliers)
 
 # Approach to Handling These Outliers
 # I believe we could retain the outliers that appeared in two of the boxplots above. Since the data points represent the number of discharges for certain diagnoses in different zip codes, this means that some zip codes have a higher amount of discharges for certain diagnoses. It is important to retain these outliers so that we can observe how some conditions are more or less prevalent in an area compared to other areas. 
-
-# Automated Analysis
