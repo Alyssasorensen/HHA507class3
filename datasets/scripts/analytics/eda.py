@@ -72,3 +72,17 @@ plt.xlabel('Hypertensi')
 plt.ylabel('Frequency')
 plt.grid(True)
 plt.show()
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Scatter plot for Diabetes vs. Hypertension
+plt.figure(figsize=(8, 6))
+plt.scatter(df['Diabetes'], df['Hypertension'], alpha=0.5, color='blue')
+plt.title('Scatter Plot: Diabetes vs. Hypertension')
+plt.xlabel('Diabetes')
+plt.ylabel('Hypertension')
+plt.grid(True)
+plt.show()
