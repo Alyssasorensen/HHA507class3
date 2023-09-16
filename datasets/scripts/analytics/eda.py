@@ -3,7 +3,7 @@ import plotly as pl
 
 ## loading the clean .csv file - patients_cleaned.csv
 
-df = pd.read_csv('https://raw.githubusercontent.com/Alyssasorensen/HHA507class3/main/data/processed/lab_result.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/Alyssasorensen/datasci_3_eda/main/datasets/processed/Hospitalization_Discharge_Rates.csv')
 df.columns
 
 df['lab_result_num_val']
