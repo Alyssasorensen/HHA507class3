@@ -113,3 +113,84 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+
+# Select the variable of interest
+variable_of_interest = 'Diabetes'
+
+# Calculate the IQR (Interquartile Range)
+Q1 = df[variable_of_interest].quantile(0.25)
+Q3 = df[variable_of_interest].quantile(0.75)
+IQR = Q3 - Q1
+
+# Define the lower and upper bounds for outliers
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+
+# Identify outliers
+outliers = df[(df[variable_of_interest] < lower_bound) | (df[variable_of_interest] > upper_bound)]
+
+# Visualize outliers using a boxplot
+plt.figure(figsize=(8, 6))
+sns.boxplot(x=variable_of_interest, data=df, palette='Set3')
+plt.title(f'Boxplot: {variable_of_interest}')
+plt.xlabel(variable_of_interest)
+plt.grid(True)
+plt.show()
+
+# Display the identified outliers
+print("Identified Outliers:")
+print(outliers)
+
+# Select the variable of interest
+variable_of_interest = 'Hypertensi'
+
+# Calculate the IQR (Interquartile Range)
+Q1 = df[variable_of_interest].quantile(0.25)
+Q3 = df[variable_of_interest].quantile(0.75)
+IQR = Q3 - Q1
+
+# Define the lower and upper bounds for outliers
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+
+# Identify outliers
+outliers = df[(df[variable_of_interest] < lower_bound) | (df[variable_of_interest] > upper_bound)]
+
+# Visualize outliers using a boxplot
+plt.figure(figsize=(8, 6))
+sns.boxplot(x=variable_of_interest, data=df, palette='Set3')
+plt.title(f'Boxplot: {variable_of_interest}')
+plt.xlabel(variable_of_interest)
+plt.grid(True)
+plt.show()
+
+# Display the identified outliers
+print("Identified Outliers:")
+print(outliers)
+
+# Select the variable of interest
+variable_of_interest = 'Anxiety_Di'
+
+# Calculate the IQR (Interquartile Range)
+Q1 = df[variable_of_interest].quantile(0.25)
+Q3 = df[variable_of_interest].quantile(0.75)
+IQR = Q3 - Q1
+
+# Define the lower and upper bounds for outliers
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+
+# Identify outliers
+outliers = df[(df[variable_of_interest] < lower_bound) | (df[variable_of_interest] > upper_bound)]
+
+# Visualize outliers using a boxplot
+plt.figure(figsize=(8, 6))
+sns.boxplot(x=variable_of_interest, data=df, palette='Set3')
+plt.title(f'Boxplot: {variable_of_interest}')
+plt.xlabel(variable_of_interest)
+plt.grid(True)
+plt.show()
+
+# Display the identified outliers
+print("Identified Outliers:")
+print(outliers)
