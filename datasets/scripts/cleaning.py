@@ -95,3 +95,16 @@ plt.xlabel('Hypertension')
 plt.ylabel('Discharges')
 plt.grid(True)
 plt.show()
+
+# Compute correlation matrix for numerical variables
+correlation_matrix = df.corr()
+
+# Display the correlation matrix
+print("Correlation Matrix:")
+print(correlation_matrix)
+
+# Plot a heatmap of the correlation matrix
+plt.figure(figsize=(10, 8))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5)
+plt.title('Correlation Heatmap')
+plt.show()
