@@ -86,3 +86,12 @@ plt.xlabel('Diabetes')
 plt.ylabel('Discharges')
 plt.grid(True)
 plt.show()
+
+# Scatter plot for Hypertensi vs. Discharges
+plt.figure(figsize=(8, 6))
+plt.scatter(df['Hypertensi'], df['Discharges'], alpha=0.5, color='red')
+plt.title('Scatter Plot: Hypertensi vs. Discharges')
+plt.xlabel('Hypertensi')
+plt.ylabel('Discharges')
+plt.grid(True)
+plt.show()
