@@ -2,7 +2,7 @@
 import pandas as pd 
 
 ### Load in data 
-df_patients = pd.read_csv('https://raw.githubusercontent.com/Alyssasorensen/HHA507class3/main/patient.csv')
+df_patients = pd.read_csv('https://raw.githubusercontent.com/Alyssasorensen/datasci_3_eda/main/datasets/processed/Hospitalization_Discharge_Rates.csv')
 df_patients['patient_id'].nunique()
 
 ### Look for missingness
