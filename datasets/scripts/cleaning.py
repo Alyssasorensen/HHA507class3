@@ -80,9 +80,9 @@ import seaborn as sns
 
 # Scatter plot for Diabetes vs. Hypertension
 plt.figure(figsize=(8, 6))
-plt.scatter(df['Diabetes'], df['Hypertensi'], alpha=0.5, color='blue')
-plt.title('Scatter Plot: Diabetes vs. Hypertensi')
+plt.scatter(df['Diabetes'], df['Discharges'], alpha=0.5, color='blue')
+plt.title('Scatter Plot: Diabetes vs. Discharges')
 plt.xlabel('Diabetes')
-plt.ylabel('Hypertensi')
+plt.ylabel('Discharges')
 plt.grid(True)
 plt.show()
