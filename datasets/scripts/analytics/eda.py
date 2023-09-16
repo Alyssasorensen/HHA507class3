@@ -33,3 +33,11 @@ print(f"Variance: {variance}")
 print(f"Standard Deviation: {std_deviation}")
 print(f"IQR (Interquartile Range): {iqr}")
 
+# Create a histogram
+plt.figure(figsize=(8, 6))
+plt.hist(df['Diabetes'], bins=20, color='skyblue', edgecolor='black')
+plt.title('Distribution of Diabetes')
+plt.xlabel('Diabetes')
+plt.ylabel('Frequency')
+plt.grid(True)
+plt.show()
